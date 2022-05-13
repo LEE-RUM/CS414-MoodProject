@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#BC9D9D"
+    android:backgroundTintMode="screen"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_quotecard"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flower">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/quotes_textview"
+            android:layout_width="300dp"
+            android:layout_height="197dp"
+            android:layout_below="@+id/image_quotecard"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/myquotes"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/author_textview"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quotes_textview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="cursive"
+            android:text="@string/author_name"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@color/primary1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/disgust_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="disgust"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/sadness_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sadness"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/anger_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="anger"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/joy_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="joy"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/surprise_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="surprise"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/fear_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fear"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <com.anychart.AnyChartView
+        android:id="@+id/pie_chart_emotion"
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
